@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <h1>Registro de Cancion para el Concurso</h1>
+    <form action="pagina para procesar" name="envio de datos">
+        <h5 style="background: yellow;">Datos del Usuario</h5>
+        <label for="nombres">Nombres</label>
+        <input type="text" name="nombres" id="nombres" placeholder="Ingrese sus nombres">
+        <label for="password" >password</label>
+        <input type="password" name="password" id="password" placeholder="ingrese su contraseña">
+        <br>
+        <label for="sexo"><b>Seleccione su sexo</b></label><br>
+        <input type="radio" name="sexo" id="Masculino">Masculino <br>
+        <input type="radio" name="sexo" id="Femenino">Femenino <br>
+        <label for="pais">Pais</label>
+        <select name="pais" id="pais">
+            <option value="peru">peru</option>
+            <option value="colombia">colombia</option>
+            <option value="argentina">argentina</option>
+            <option value="chile">chile</option>
+        </select>
+        <h5 style="background: yellow;">Datos de la musica</h5><br>
+        <label for="tipo de musica"><b>Seleccione el tipo de Musica</b></label><br>
+        <input type="checkbox" name="Musica" id="musica" value="clasica"> clasica <br>
+        <input type="checkbox" name="Musica" id="musica" value="pop"> pop <br>
+        <input type="checkbox" name="Musica" id="musica" value="rock"> rock <br>
+
+        <label for="archivo"><b>Seleccione la cancion a enviar</b></label>
+        <input type="file" name="archivo" id="archivo">
+        <br>
+        <label for="mensaje">Ingrese un mensaje</label><br>
+        <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea><br>
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpiar">
+        <button type="button" onclick="alert('hola mundo')">Saludo</button>
+        
+
+    </form>
+</body>
+</html>
