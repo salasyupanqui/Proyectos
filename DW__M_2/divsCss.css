@@ -1,0 +1,32 @@
+.container {
+    width: 550px;
+    height: 550px;
+    background-color: azure;
+    margin: auto;
+    position: relative;
+}
+
+.uno {
+    width: 60px;
+    height: 60px;
+    background-color: green;
+    left: 50px;
+    top: 20px;
+    position: absolute;
+}
+.dos {
+    width: 60px;
+    height: 60px;
+    background-color: blue;
+    left: 100px;
+    top: 20px;
+    position: absolute;
+}
+.tres {
+    width: 60px;
+    height: 60px;
+    background-color: orange;
+    left: 150px;
+    top: 20px;
+    position: absolute;
+}
