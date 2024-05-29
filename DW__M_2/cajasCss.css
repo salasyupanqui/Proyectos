@@ -1,0 +1,41 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.contenedor {
+    background-color: peru;
+    width: 1024px;
+    height: 800px;
+    margin: auto;
+}
+.uno {
+    background-color: green;
+    width: 200px;
+    height: 200px;
+    float: left;
+
+}
+.dos {
+    background-color: gray;
+    width: 200px;
+    height: 200px;
+    float: left;
+    
+}
+.tres {
+    background-color: blue;
+    width: 200px;
+    height: 200px;
+    float: right;
+}
+.cuatro {
+    background-color: pink;
+    width: 200px;
+    height: 200px;
+    float: right;
+
+}
+.divisor {
+    clear: both;
+}
