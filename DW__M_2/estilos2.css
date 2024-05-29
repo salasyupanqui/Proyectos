@@ -1,0 +1,35 @@
+
+main {
+    background-color: burlywood;
+    width: 960px;
+    height: 850px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.info1 {
+    background-color: aqua;
+    width: 160px;
+    height: 70px;
+    border-radius: 10px;
+    
+}
+.import {
+    color: white;
+    font-family: monospace;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#enfasis {
+
+    font-style: italic;
+}
+
+aside div {
+    background-color: brown;
+    color: white;
+}
+
+aside > div {
+    background-color: aqua;
+}
