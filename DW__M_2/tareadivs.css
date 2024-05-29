@@ -1,0 +1,92 @@
+.contenido {
+    width: 600px; /* Reducir el ancho del contenedor */
+    height: 600px; /* Reducir el alto del contenedor */
+    background-color: gray;
+    margin: auto;
+    position: relative;
+}
+
+/* Clases específicas para cada div */
+.uno {
+    background-color: skyblue;
+    width: 90px;
+    height: 90px;
+    left: 40px; /* Reducir la distancia desde la izquierda */
+    top: 20px; /* Reducir la distancia desde la parte superior */
+    position: absolute;
+}
+.dos {
+    background-color: skyblue;
+    width: 90px;
+    height: 90px;
+    left: 470px; /* Reducir la distancia desde la izquierda */
+    top: 20px; /* Reducir la distancia desde la parte superior */
+    position: absolute;
+}
+.tres {
+    background-color: pink;
+    width: 90px;
+    height: 90px;
+    left: 140px; /* Reducir la distancia desde la izquierda */
+    top: 115px; /* Reducir la distancia desde la parte superior */
+    position: absolute;
+}
+.cuatro {
+    background-color: pink;
+    width: 90px;
+    height: 90px;
+    left: 370px; /* Reducir la distancia desde la izquierda */
+    top: 115px; /* Reducir la distancia desde la parte superior */
+    position: absolute;
+}
+.cinco {
+    background-color: green;
+    width: 90px;
+    height: 90px;
+    left: 250px; /* Reducir la distancia desde la izquierda */
+    top: 210px; /* Reducir la distancia desde la parte superior */
+    position: absolute;
+}
+.seis {
+    background-color: yellow;
+    width: 90px;
+    height: 90px;
+    left: 250px; /* Reducir la distancia desde la izquierda */
+    top: 290px; /* Reducir la distancia desde la parte superior */
+    position: absolute;
+}
+.siete {
+    background-color: pink;
+    width: 90px;
+    height: 90px;
+    left: 370px; /* Reducir la distancia desde la izquierda */
+    top: 370px; /* Reducir la distancia desde la parte superior */
+    position: absolute;
+}
+.ocho {
+    background-color: pink;
+    width: 90px;
+    height: 90px;
+    left: 140px; /* Reducir la distancia desde la izquierda */
+    top: 370px; /* Reducir la distancia desde la parte superior */
+    position: absolute;
+}
+.nueve {
+    background-color: skyblue;
+    width: 90px;
+    height: 90px;
+    left: 40px; /* Reducir la distancia desde la izquierda */
+    top: 480px; /* Reducir la distancia desde la parte superior */
+    position: absolute;
+}
+.diez {
+    background-color: skyblue;
+    width: 90px;
+    height: 90px;
+    left: 470px; /* Reducir la distancia desde la izquierda */
+    top: 480px; /* Reducir la distancia desde la parte superior */
+    position: absolute;
+}
+.divisor {
+    clear: both;
+}
