@@ -33,3 +33,6 @@ aside div {
 aside > div {
     background-color: aqua;
 }
+.contenedor  {
+    background-color: red;
+}
