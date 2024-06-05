@@ -1,0 +1,169 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/* */
+/*ENCABEZADO*/
+
+.cabeceraLogo {
+    display: flex;
+    justify-content: center;
+    width: 96%;
+    height: 150px;
+    padding: 0% 2%;
+    background-color:darkgoldenrod;
+}
+
+.cabeceraLogo > div {
+    flex: 1;
+    max-width: 960px;
+    padding-top: 45px;
+}
+
+.cabeceraLogo h1 {
+    font: bold;
+    color: aqua;
+    text-align: center;
+}
+
+/*ahora nos centramos en el menu principal */
+
+.menuPrincipal {
+    display: flex;
+    justify-content: center;
+    width: 96%;
+    height: 50px;
+    padding: 0% 2%;
+    background-color: bisque;
+    border-top: 1px bold solid #653b3b;
+    border-bottom: 1px solid #653b65;
+}
+.menuPrincipal > div {
+    flex: 1;
+    max-width: 960px;
+}
+.menuPrincipal li {
+    display: inline-block;
+    height: 53px;
+    padding: 15px 10px 0px 10px;
+    margin-right: 5px;
+}
+
+.menuPrincipal li:hover {
+     background-color: aquamarine;
+}
+.menuPrincipal a {
+    font: bold 18px arial, sans-serif;
+    color: blueviolet;
+    text-decoration: none;
+    animation: animaDos 2s linear  infinite alternate;
+}
+/* ahora trabajamos con la etiqueta MAIN*/
+/* CUERPO*/
+
+main {
+    display: flex;
+    justify-content: center;
+    width:96% ;/* ojito chamo recuerda que widgth es ancho y heigth es alto aprende rctm */
+    padding: 2%;
+    background-color: aqua;
+}
+main > div {
+    display: flex;
+    flex: 1;
+    max-width: 960px;
+}
+
+.articuloPrincipal {
+    flex: 1;
+    margin-right: 20px;
+    padding-top: 30px;
+    background: #fff666;
+    border-radius: 10px;
+}
+.infoAdicional {
+    width: 280px;
+    padding: 20px;
+    background: #fff6cc;
+    border-radius: 10px;
+}
+.infoAdicional h1 {
+    font: bold 18px Arial;
+    color: #333333;
+    margin-bottom: 15px;
+}
+/* */
+/*AHORA TRABAJAMOS CON AL ETIQUETA ARTICLE*/
+/* ARTICLE*/
+
+article {
+    position: relative;
+    padding: 0px 40px 20px 40px;
+}
+article time {
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: -70px;
+    width: 80px;
+    padding: 15px 5px ;
+    background-color: violet;
+    box-shadow: 3px 3px 5px #fff666;
+    border-radius: 5px;
+}
+/* continuamos con article*/
+
+.numerodia {
+    font: bold 36px verdana;
+    color: aquamarine;
+    text-align: center;
+}
+.nombredia {
+    font: 12px verdana;
+    color: #333333;
+    text-align: center;
+}
+article h1 {
+    margin-bottom: 5px;
+    font: bold 30px georgia;
+}
+
+article p {
+    font: 18px georgia;
+}
+figure {
+    margin: 10px 0px;
+}
+figure img {
+    max-width: 98%;
+    padding: 1%;
+    border: 1px bold;
+}
+/* */
+/*ahora trabajamos con la qtiqueta footer*/
+/* */
+.pieLogo {
+    display: flex;
+    justify-content: center;
+    width: 96%;
+    padding: 2%;
+    background-color: darkgoldenrod;
+}
+.pieLogo > div {
+    display: flex;
+    flex:1;
+    max-width: 960%;
+    background-color: #653b3b;
+    border-radius: 10px;
+}
+.seccionPie {
+    flex: 1;
+    padding: 25px;
+}
+.seccionPie h1 {
+    font: bold 20px arial;
+}
+.seccionPie p {
+    margin-top: 5px;
+}

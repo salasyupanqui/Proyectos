@@ -1,0 +1,58 @@
+.padre{
+    background: rgb(242, 248, 154);
+    width: 600px;
+    height: 600px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}  
+.uno{
+    background: rgb(162, 0, 255);
+    height: 100px;
+    flex: 1;
+    /*
+    transform: scale(1.2);
+    transform: rotate(45deg);
+    */
+    transition: all 1s ease-in;   
+} 
+
+.uno:hover {
+    background: red;
+    transform: scale(1.1) rotate(45deg);
+}
+
+
+/*  */
+/* Transformacoiones / transiciones y animaciones*/
+/*  Crear la animacion*/
+
+@keyframes animaDos {
+    0%{
+        background-color: aqua;
+        border-radius: 10px;
+
+    }
+    10%{
+        background-color: darkgreen;
+        border-radius: 20px;
+    }
+    90%{
+        background-color: coral;
+        border-radius: 50px;
+    }
+
+    100%{
+        background-color: fuchsia;
+    }
+}
+
+.dos{
+    background: blue;
+    height: 100px;
+    flex: 2;
+    animation: animaDos 2s linear  infinite alternate;
+
+}

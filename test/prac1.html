@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de datos personales</title>
+</head>
+<body>
+    <form>
+        <fieldset >
+            <legend>Datos Personales</legend>
+            <label for="saludar">Seleccione su denominacion</label>
+            <select name="saludar">
+                <option value="">--seleccione--</option>
+                <option value="Sr.">Sr.</option>
+                <option value="Sra.">Sra.</option>
+            </select>
+            <br><br>
+
+            <label for="first-name">Nombre:</label>
+            <input type="text" name="first-name" placeholder="Ejem. Jean">
+            <br><br>
+
+            <label for="lastname">Apellidos</label>
+            <input type="text" name="last-name" placeholder="Ejem. Salas">
+            <br><br>
+
+            <label for="gender">Sexo: </label>
+            <input type="radio" name="gender"  value="male">
+            <label for="male">Masculino</label>
+            <input type="radio" name="gender" value="female">
+            <label for="female">Femenino</label>
+            <br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" name="email" placeholder="ejem@gmail.com">
+            <br><br>
+
+            <label for="date-birth">Año de Nacimiento: </label>
+            <input type="date" name="date-birthday" value="">
+            <br><br>
+
+            <label for="addres">Direccion:</label><br>
+            <textarea name="addres" rows="3" cols="35" placeholder="Escribe aqui tu texto"></textarea>
+            <br><br>
+            <button type="submit" onclick="alert('formulario enviado')">Enviar</button>
+            <button type="reset">Refrescar</button><br>
+            
+        </fieldset>
+    </form>
+</body>
+</html>

@@ -6,7 +6,8 @@
     <title>Formularios</title>
 </head>
 <body>
-    <h1>Registro de Cancion para el Concurso</h1>
+    <h1 class="h1_padre">Registro de Cancion para el Concurso</h1>  
+    </style>
     <form action="pagina para procesar" name="envio de datos">
         <h5 style="background: yellow;">Datos del Usuario</h5>
         <label for="nombres">Nombres</label>
@@ -34,15 +35,11 @@
         <input type="file" name="archivo" id="archivo">
         <br>
         <label for="mensaje">Ingrese un mensaje</label><br>
-        <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea><br>
+        <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="ingrese aqui"></textarea><br>
 
-        <input type="submit" value="Enviar">
-        <input type="submit" value="Enviar">
-        <input type="submit" value="Enviar">
+        <input type="submit" value="Enviar" onclick="alert('formulario enviado')">
         <input type="reset" value="Limpiar">
         <button type="button" onclick="alert('hola mundo')">Saludo</button>
-        
-
     </form>
 </body>
 </html>
