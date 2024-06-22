@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: brown;
+}
+
+.cabecera {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    background-color: green;
+}
+
+.uno, .dos, .tres, .cuatro {
+    margin: 10px;
+    width: 300px;
+    height: 200px;
+    background-color: peru;
+}
+
+aside {
+    background-color: green;
+    height: 100px;
+    width: 100px;
+    margin-top: 20px;
+    width: 100px; /* Ajustar el ancho del aside según sea necesario */
+    height: 500px; /* Ajustar la altura del aside según sea necesario */
+}
+
+.content {
+    display: flex; /* Usar flexbox */
+}
+
+aside, .cinco {
+    margin-right: 10px; /* Añadir espacio entre el aside y el bloque 5 */
+}
+
+.cinco, .seis {
+    background-color: green;
+    width: 300px;
+    height: 200px;
+    border: solid black;
+}
+
+@media (max-width: 600px) {
+    .content {
+        flex-direction: column; /* Cambiar a una sola columna en dispositivos pequeños */
+    }
+
+    aside, .cinco {
+        margin-right: 0; /* Eliminar el margen derecho en dispositivos pequeños */
+        margin-bottom: 10px; /* Añadir espacio entre los elementos en dispositivos pequeños */
+    }
+}
