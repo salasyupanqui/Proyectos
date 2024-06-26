@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bucles en JavaScript</title>
+</head>
+<body>
+    <script>
+         
+        //imprimir N numeros posibles
+        let i = 1; // este sera un contador o inicializador
+        let cad; //este sera una cadena
+        let n;
+
+        n = prompt("ingrese un numero", "solo enteros");
+
+        /*
+        // usamos el ciclo while
+        while(i <= n){
+            cad = cad + `<br>${i}`;
+            i++;
+        }
+        document.write(cad);
+        */
+        //ahora usamos el do while pero de forma descendente
+        /*
+        i = n;
+        do{
+            cad = cad + `<br>${i}`;
+            i--;
+        }while(i >= 1);
+        document.write(cad);
+        */
+       //ahora usamos el bucle for ojo for
+       for(i = 1; i <= n;i++){
+        cad = cad + `<br>${i}`;
+       }
+       document.write(cad);
+    </script>
+</body>
+</html>

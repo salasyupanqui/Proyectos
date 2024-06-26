@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de Datos</title>
+</head>
+<body>
+    <script>
+        //recuerda document.write trabaja doiretamente con el html y console ,log tiene  diferentes funcionalidades
+        document.write("hola mundo <br>");
+        document.write("hola 'mundo' <br>");
+        
+        document.write(`hola me gusta aprender java script <br>`);
+
+        var txt1 = "mi nombre es  ";
+        var txt2 = "juan";
+        document.write(txt1 + txt2 + "<br>");
+        //vamos a optimizar
+        document.write(`${txt1} ${txt2}`);//forma optimizada de leer variables
+        //expresiones lambda su formula es (parametros) => expresion o salida ejemplo
+        var suma = (a, b) => a + b;
+        console.log(suma(5,6));
+    </script> 
+    
+</body>
+</html>

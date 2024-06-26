@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprenderemos Condicionales</title>
+</head>
+<body>
+    <script>
+        let numero = prompt("ingrese un numero", "0");
+        numero = parseInt(numero);
+        console.log(typeof(numero));
+
+        if(numero % 2 == 0){
+            document.write(`<br> El numero ${numero} es par`);
+        }else{
+            document.write(`<br> El numero ${numero} es impar`);
+        }
+        //ahora nos pasamos a la sentencia switch-case
+        //ingresa la lectras S, C, D, V y devolver soltero casado viudo o divorciado
+        let letra = prompt("Ingresa las letras: S, C, V, D");
+        let msg;
+        switch(letra){
+            case "S":
+                msg = "SOLTERO";
+                break;
+            case "C":
+                msg = "CASADO";
+                break;
+            case "V":
+                msg = "VIUDO";
+                break;
+            case "D":
+                msg = "DIVORCIADO";
+                break;
+            default:
+                document.write(`<br> Ingrese una letra valida`);
+                break;
+        }
+        document.write(`<br> Segun su letra usted es: ${msg}`);
+    </script>
+</body>
+</html>

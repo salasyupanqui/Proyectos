@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funciones y Eventos</title>
+</head>
+<body>
+    <script>
+        //funciones arrow
+        const suma = (a,b) =>  a + b;
+        document.write(`<br> La suma de los numeros de ${5} y ${6} son: ${suma(5,6)}`);
+        //aohra aprenderemos clieck eventes
+        document.getElementById("boton").addEventListener("click", () => {console.log("hiciste un click");});
+        //POO Programamcion orientada a objetos
+        class Persona {
+            constructor(nombre, edad){
+                this.nombre = nombre;
+                this.edad = edad;
+            }
+            saludar(){
+                console.log(`hola me llamo ${this.nombre} y tengo ${this.edad} años`);
+            }
+        }
+    </script>    
+</body>
+</html>

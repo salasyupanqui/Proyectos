@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funciones con JavaScrip</title>
+</head>
+<body>
+    <script>
+        function sumaDosNumeros(){
+            let x = prompt("ingrese el primer numero", "4");
+            x = parseInt(x);
+
+            let y = prompt("Ingrese el segundo numero", "4");
+            y = parseInt(y);
+
+            document.write(`La suma es: ${x + y}`);
+        }
+        sumaDosNumeros();
+
+        //ahora veremos funciones con parametros ojo parametros
+        function sumar2numeros(x,y){
+            return x + y;
+        }
+        let a = prompt("ingresa el primer numero");
+        let b = prompt("ingresa el segundo numero");
+
+        a = parseInt(a);
+        b = parseInt(b);
+        document.write(`<br> La suma es: ${sumar2numeros(a,b)}`);
+
+        //ahora haremos la funcion de operacion signos si?
+        function operacion(x,y,signo){
+            switch(signo){
+                case "+": return x + y; break;
+                case "-": return x - y; break;
+                case "*": return x * y; break;
+                case "/": return x / y; return;
+            }
+        }
+        //pasar los valores a los paametros
+        let n1 = prompt("ingrese el primer valor: ", 0);
+        let n2 = prompt("ingrese el segundo valor: ", 0);
+        let signo = prompt("ingrese el signo + "," -, /, *");
+
+        n1 = parseInt(n1);
+        n2 = parseInt(n2);
+
+        document.write(`<br> La suma es : ${operacion(n1, n2, signo)}`);
+
+    </script>
+</body>
+</html>

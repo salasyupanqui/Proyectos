@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funcion Arrow</title>
+</head>
+<body>
+    <script>
+        //funcion tradicional de una funciòn:
+        function sumaT(a,b){
+            return a + b;
+        }
+
+        //Funcion con con notacion arrow
+        //ES5 ojo con notacion notacion
+        const suma = function(a,b){
+            return a + b;
+        }
+        //Funcion de flecha o arrow don ecma script la version ES6
+        //una funcion arrow ecmascript es una funcion es una funcion en una variable 
+        const sumaA = (a,b) => {
+            return a + b;
+        }
+
+        //Funcion de flecha pasando un parametro
+        const calcularCuadrado = num => num ** 2;
+        //Funcion flecha sin parametros 
+        const saludar = () => "hola chicos";
+        const pi = () => 3.14;
+        const numeroAleatorio = () => Math.random();
+        //probando----------------
+        document.write(saludar());
+        document.write(`<br> la suma es: ${sumaA(5,6)}`);
+        //imprimir
+        document.write(`<br> ${suma(5,5)}`);
+        document.write(`<br> ${sumaT(7,7)}`);
+        document.write(`<br> ${calcularCuadrado(6)}`);
+        document.write(`<br> ${saludar()}`);
+        document.write(`<br> El valor de pi es: ${pi()}`);
+
+        //mas funciones arrow de como aprender
+        const hora = () => new Date();
+        document.write(`<br> Tu ubicacion es: ${hora()}`);
+    </script>
+</body>
+</html>

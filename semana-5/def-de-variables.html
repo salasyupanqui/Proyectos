@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Definicion de Variables</title>
+</head>
+<body>
+    <script>
+        let x = 5;
+        x = "Hola soy el 5"
+        document.write(`${x}`);//ojo no olvidar de usar el metodo optimizado
+
+        let a = 5;
+        let b = a + 3;
+        let c = new Date();
+
+        document.write(`<br> imprimiendo variables con: <br>
+        - La variable a: ${a} <br>
+        - La variable b: ${b} <br>
+        - La variable c: ${c} <br>
+        - La variable a: ${c.getDate()} <br>
+        `);
+
+        //como inoprimir fechas años semenas y meses?
+        let dia = c.getDate();
+        let mes = c.getMonth();
+        let años = c.getFullYear();
+        document.write(`<br> La fecha es: ${dia}/${mes}/${años}`);
+        //variables que cambiar su valor a traver del codigo spagueti o sea son inmutables
+        const pi = 3.1416;
+        pi = 42;
+        document.write(`<br> El valor de pi es: ${pi}`);
+
+    </script>
+</body>
+</html>
