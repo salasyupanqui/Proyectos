@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini calculadora</title>
+</head>
+<body>
+    Numero:
+    <input type="text" id="n1" onclick="limpiar()">
+    <button onclick="elevar()">X <sup>2</sup></button>
+
+    <script>
+        function elevar(){
+            let nun = document.getElementById('n1');
+            nun.value = nun.value*nun.value; // estamos elevando al cuadrado 
+        }
+        function limpiar(){
+            document.getElementById('n1').value = "";
+        }
+        //ojo las variables var son de contexxto global en javascript no es como en otros lenguajes de progrmamacion
+        //significa que son accesibles desde cualquier parte del codigo
+        //const no puede ser reasinado una vez iniciado es constante su valor se mantiene
+        //mienstras que let se somete al uso de un solo bloque es decir que puede cambiar su valor pero mientras se encuantre dentro de un solo bloque
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semana-6 JavaScript</title>
+</head>
+<body>
+    <script>
+        //los eventos son la manera de controlar la accion de los visistantes
+        function Alerta(){
+            alert("que tranza culeros");
+        }
+        document.write(Alerta());
+        /*
+        <p>este sera la separacion de un script u otro aver si funciona</p>
+        <p>ahora trabajaremos con ADDEVENTLISTENER</p>
+        */
+        function mensaje(){
+            var msg = document.getElementById(`MensajeID`);//se obtiene de la etiqueta html
+            //primera opcion
+            msg.addEventListener("click", Alerta()); //se produce  el evento "click" al clickear la etiqueta html
+            //la segunda opcion es meter el addeventilstener dentro de una funcion en el camino osea en el mismo hecho ejemplo
+            msg.addEventListener("click", function(){
+                alert("que hubo mamaguevo");
+            });
+        }
+        //fUNDAMENSTOS DE AJAX OMO TRABAJAR CON AJAX APRENDE MOTHERFUCKER
+        
+    </script>
+</body>
+</html>

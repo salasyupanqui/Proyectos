@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modificando Estilos</title>
+</head>
+<body>
+    <div class="cajas" id="uno">1</div>
+    <div class="cajas" id="dos">2</div>
+    <div class="cajas" id="tres">3</div>
+    <button id="aplicaEstilos">Aplicar estilos</button>
+    <button id="aplicaColor">Cambia a Rojo</button>
+    <button id="girar">Girar</button>
+    <button id="CargarImagen">Cargar Imagen</button>
+    <input type="color" id="color-p">
+    
+    <script> 
+        // lo que aprendimos hoy
+        // cambiar las funciones a funciones flecha
+        // agregar eventos usando el addEventListener
+        // agregar un botón más para calcular la raíz cuadrada.
+        // usar Math.sqrt()
+
+        const estilos = () => {
+            let divs = document.querySelectorAll(".cajas"); 
+            divs.forEach(div => {
+                div.style.width = "150px";
+                div.style.height = "50px";
+                div.style.margin = "10px";
+                div.style.border = "solid 2px blue";
+            });
+        }
+
+        // ojo aprender interpolación de variables que son?
+        // interpolación de variables es cuando dentro de una cadena de texto puedes meter o mostrar una variable de esta forma
+        // ejemplo num = (`<br> My variable es: ${name}`); esta es la forma correcta de interpolar variables
+        const cambiaColor = () => {
+            let divs = document.querySelectorAll(".cajas");
+            let color = document.getElementById("color-p");
+            const selectColor = color.value;
+            divs.forEach(div => {
+                div.style.backgroundColor = selectColor;
+            });
+        }
+
+        // FUNCION AL HACER CLICK DERECHO
+        const mostrarMensaje = (event) => {
+            event.preventDefault();
+            alert("Hiciste clic derecho....");
+        }
+
+        // función para girar el div 2
+        const girarDivDos = () => {
+            let div2 = document.getElementById("dos");
+            div2.style.transform = "rotate(45deg)"; // Aquí corregimos el uso de div a div2
+        }
+
+        // función para cargar imagen
+        const cargarImagen = () => { // Cambiado el nombre de la función a minúsculas para mantener la convención
+            let div2 = document.getElementById("dos");
+            div2.innerHTML = '<img src="foto.png" style="width: 100%; height: 100%;">'; // Cambiado div a div2 y corregido "heigth" a "height"
+        }
+
+        // Agregar eventos a los botones
+        let btnaplicaEstilos = document.getElementById('aplicaEstilos');
+        let btnaplicaColor = document.getElementById('aplicaColor');
+        let btnGirar = document.getElementById('girar'); // Agregado el botón con el id 'girar'
+        let btnCargarImagen = document.getElementById('CargarImagen'); // Agregado el botón con el id 'CargarImagen'
+
+        // agregar eventos a los botones, usando el addEventListener
+        btnaplicaEstilos.addEventListener('click', estilos);
+        btnaplicaColor.addEventListener('click', cambiaColor);
+        btnGirar.addEventListener('click', girarDivDos); // Asignado el evento 'click' al botón girar
+        btnCargarImagen.addEventListener('click', cargarImagen); // Asignado el evento 'click' al botón Cargar Imagen
+
+        document.addEventListener('contextmenu', mostrarMensaje);
+
+        /*
+        Eventos del teclado aprenderemos a continuación son
+        Keydown: esto ocurre cuando se presiona una tecla.
+        KEYPRESS: también se usa esto cuando se presiona una tecla, pero ya está desfasado usa solo keydown
+        KEYUP: ocurre cuando se suelta una tecla antes obviamente ya habiendo sido apretada
+
+        AHORA QUE EVENTOS TIENE UN FORMULARIO? UN FORMULARIO QUE EVENTOS PUEDE TENER? LAS CUALES SON:
+        SUBMIT: Ocurre al enviar un formulario
+        CHANGE: con este evento se cambia el valor de un elemento
+        INPUT: ocurre cuando el valor de de un elemento input cambia
+        FOCUS: ocurre cuando el elemento gana el foco o pierde la dirección del puntero
+        BLUR: ocurre cuando un elemento pierde el foco
+        RESET: ocurre cuando se restablece un formulario
+        INVALID: ocurre cuando un elemento no pasa la validación.
+        */
+    </script>
+</body>
+</html>

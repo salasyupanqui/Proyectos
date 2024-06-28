@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>como usar AJAX</title>
+</head>
+<body>
+    <script>
+        //imagina seleccionar un elelemto del doom
+        var button = document.querySelector('button');
+        //aqui se deina la funcion que se va a ejecutar cuando ocurra el evento
+        function handleClick(){
+            alert('boton clickeado');
+        }
+        //aqui se usa el addeventlistener para escuchar el evento click osea escuchar al clikear
+        button.addEventListener('click', handleClick);
+        //Ahora como remover el evento que ya hemos creado del clik
+        button.removeEventListener('click', handleClick);
+        //ahora trabajaremos con el evento mousehover
+        var div = document.querySelector('div');
+        div.addEventListener('mouseover', function(){
+            div.style.backgroundColor = 'yellow'
+        });
+        div.addEventListener('mouseout', function(){
+            div.style.backgroundColor = 'white';
+        });
+        //ahora veremos el evento keydowm ojo estamos trabajando con  eventos 
+        document.addEventListener('keydonw', function(event){
+            console.log('key pressed:', event.key);
+        });
+        //en este evento se escucha toda la pantalla una vez que hayas dado click, se imprime en consola la tecla que apretaste
+        //AHORA USAREMOS PARAMETROS EN LA FUNCION DE MANEJO DE EVENTOS
+        var button = document.querySelector('button');
+
+        button.addEventListener('click', function(event){
+            console.log('Button clicked at position:', event.clientX, event.clientY);
+        });
+        //AQUI IMPRIMIMOS EN LA CONSOLA LAS COORDENADAS DEL PUNTERO DEL RATON CUANDO TU HAGAS CLICK 
+
+        </script>
+</body>
+</html>

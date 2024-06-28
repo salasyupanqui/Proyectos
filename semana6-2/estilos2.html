@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modificando Estilos</title>
+</head>
+<body>
+    <div class="cajas" id="uno">1</div>
+    <div class="cajas" id="dos">2</div>
+    <div class="cajas" id="tres">3</div>
+    <button id="aplicaEstilos">Aplicar estilos</button>
+    <button id="aplicaColor">Cambia a Rojo</button>
+
+    <button id="girar">Girar</button>
+    <button id="CargarImagen">Cargar Imagen</button>
+
+    <input type="color" id="color-p">
+    
+    <script> 
+    //lo que aprendimos hoy
+    //cambiar las funciones a funciones flecha
+    //agregar  evebtos usando el addeventlistener
+    //agregar un boton mas para calcular la raiz cuadrada.
+    //usar Math,sqrt()
+        const estilos = () => {
+            let divs = document.querySelectorAll(".cajas"); 
+            divs.forEach(div=>{
+                div.style.width = "150px";
+                div.style.height = "50px";
+                div.style.margin = "10px";
+                div.style.border = "solid 2px blue";
+            });
+        }
+        //ojo aprender interpolacion de variables que son?
+        //interpolacion de variables es cuando dentro de una cadena de texto puedes meter o moistrar una variabla de esta forma
+        //ejemplo num = (`<br> My variable es: ${name}`); esta es la forma correcta de interpolar variables
+        const cambiaColor = () => {
+            let divs = document.querySelectorAll(".cajas");
+            let color = document.getElementById("color-p");
+            const selectColor = color.value;
+            divs.forEach(div => {
+                div.style.backgroundColor = selectColor;
+            });
+        }
+        //FUNCION AL HACER CLICK DERECHO
+        const mostrarMensaje = (event) => {
+            event.preventDefault();
+            alert("hiciste el click Derecho....");
+        }
+
+        //funcion para girar el div 2
+        const girarDivDos = () => {
+            let div2 = document.getElementById("dos");
+            div.style.transform = "rotate(45deg)";//ojo aqui estamos usando el evento transform
+        }
+        //funcion para gargar imagen----
+        const CargarImagen = () => {
+            let div2 = document.getElementById("dos");
+            div.innerHTML = '<img src = "foto.png" style = "width: 100%"; heigth:100%>';
+        }
+
+        // Agregar eventos a los botones
+        let btnaplicaEstilos = document.getElementById('aplicaEstilos');
+        let btnaplicaColor = document.getElementById('aplicaColor');
+
+        //agregmos eventos a los botones, usando el addEventListener
+        btnaplicaEstilos.addEventListener('click', estilos);
+        btnaplicaColor.addEventListener('click', cambiaColor);
+
+        document.addEventListener('contextmenu', mostrarMensaje);
+
+        document.addEventListener('girar', girarDivDos);
+
+        /*
+        Eventos del teclado aprenderemos a continuacion son
+        Keydown: esto courre cuendo se presiona una tecla.
+        KEYPRESS: tambien se se usa esto cuando se presiona una tecla, peo ya esta desfasado  usa solo keydown
+        KEYUP: ocurre cuando se suelta una tecla antes oviamente ya habiendo sido apretado
+
+        AHORA QUE EVENTOS TIENE UN FORMULARION? UN FORMULARIO QUE EVENTOS PUEDE TENER? LAS CUALES SON:
+        SUBMIT: Ocurree al enviar un formulario
+        CHANGE: con este evento se cambia el valor de un elemento
+        INPUT: ocurre cuando el valor de de un elemento input cambia
+        FOCUS: ocurre cuando el elemento gana el foco o pierde la direccion del puntero
+        BLUR: ocurre cuando un elementp pierde el foco
+        RESET: ocurre cuando se reestablece un formulario
+        INVALID: Ocurre cuando um elemento no pasa la validacion.
+
+        */
+    </script>
+</body>
+</html>

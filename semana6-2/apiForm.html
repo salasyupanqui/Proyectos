@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validando Formularios</title>
+</head>
+<body>
+    <script>
+        //funcion para la asignacion o inicializacion y asignacion de eventos
+        const iniciar = () => {
+            const boton = document.getElementById("enviar");
+            boton.addEventListener('click', enviarFormulario);
+        }
+
+        //funcion para validar el formulario
+        const enviarFormulario = (event) => {
+            const formulario = document.querySelector(".formulario");
+            const validez = formulario.checkValidity();
+            if (validez) {
+                alert("Enviado correctamente");
+                formulario.submit();
+                formulario.reset();
+            } else {
+                alert("No enviado. Por favor, ingrese un correo válido.");
+                formulario.reset();
+            }
+        }
+
+        //asignar el evento al cargar la ventana 
+        window.addEventListener('load', iniciar);
+    </script>
+
+    <section>
+        <form action="procesar.php" class="formulario">
+            <label for="correo">Correo:
+                <input type="email" name="correo" placeholder="jean@gmail.com" id="correo" required>
+            </label>
+            <button type="button" id="enviar">Enviar</button>
+        </form>
+    </section>
+</body>
+</html>
